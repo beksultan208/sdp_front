@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Modal Panel</title>
+
+</head>
+<body>
+
+<!-- Trigger button -->
+<button onclick="openModal()">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <img src="assets/hotel-1.jpg" alt="Image">
+    <p>Your text goes here.</p>
+  </div>
+</div>
+
+<script>
+
+    function openModal() {
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+
+    window.onclick = function (event) {
+        var modal = document.getElementById('myModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+
+</body>
+</html>
